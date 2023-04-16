@@ -1,0 +1,103 @@
+$color1:black;
+$color2:yellow;
+$color3:white;
+
+$widthimg:200px;
+$sizeh1: 100px;
+$sizeh2:25px;
+
+$fonttitle: font-family 'Gentium Book Plus',
+serif;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: $color1 !important;
+}
+
+.nav-link {
+    font-size: large;
+}
+
+h1 {
+    font-family: $fonttitle;
+    color: $color1;
+    font-size: $sizeh1;
+    text-shadow: black;
+}
+
+span {
+    color: $color2;
+}
+
+.banner {
+    background-image: url(../img/cine.jpg);
+    background-color: $color1;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banresenas {
+    @extend .banner;
+    background-image: url(../img/Reseña.jpg);
+
+
+}
+
+.color {
+    color: $color2;
+}
+
+
+
+.container {
+    background-color: $color1;
+    margin-top: 10px;
+
+}
+
+section {
+    img {
+        width: $widthimg;
+
+
+    }
+
+    p {
+        color: $color2;
+        font-size: xx-large;
+    }
+
+    h2 {
+        color: $color3;
+    }
+}
+
+.navbar-brand {
+    font-size: $sizeh2;
+
+}
+
+footer {
+    @extend .container;
+    color: yellow;
+    text-align: center;
+
+}
+
+.flex{
+    dis
+}
+
+.bannerserie{
+    @extend .banner;
+    background-image: url(.);
+}
