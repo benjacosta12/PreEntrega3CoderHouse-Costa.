@@ -1,61 +1,135 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
-  </head>
-  <body>
-    
-    <header>
-      <div>
-          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-              <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><span>Costa</span> Cine </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapsibleNavbar">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                      <ul class="navbar-nav">
-                          <li class="nav-item">
-                              <a class="nav-link" href="../index.html">Inicio</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="./resenaspelis.html">Peliculas</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="./resenasseries.html">Series</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="./contacto.html">Contacto</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </nav>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span>Costa</span> Cine </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./resenaspelis.html">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./resenasseries.html">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
   </header>
 
   <section class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <div class="bannerserie"></div>
+        <div class="bannerserie ">
+          <h1 class="color">Series</h1>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="container">
+    <div class="row">
+      <div class="col-3 flexible"> <img src="../img/got.jpg" alt="imagengot"> </div>
+      <div class="col-9">
+        <h2>Game of Thrones</h2>
+        <p>
+          "Game of Thrones" es una serie de televisión dramática y de fantasía creada por David Benioff y D. B. Weiss,
+          basada en la serie de novelas "Canción de Hielo y Fuego" de George R.R. Martin. La trama se desarrolla en un
+          mundo ficticio y sigue a varias casas nobles que luchan por el control del Trono de Hierro, el símbolo del
+          poder en los Siete Reinos.
+          <br>
+          <br>
+          La serie ha sido aclamada por su complejo argumento, la riqueza de los personajes y la impresionante
+          cinematografía. La serie es conocida por su tratamiento de temas como la política, la guerra, la religión, la
+          traición y el amor. Además, cuenta con un gran elenco de actores, incluyendo a Emilia Clarke, Kit Harington,
+          Peter Dinklage, Lena Headey, Sophie Turner y Maisie Williams.
+            <br>
+            <br>
+          "Game of Thrones" ha sido uno de los mayores éxitos televisivos de la historia y ha recibido numerosos
+          premios, incluyendo 59 Premios Emmy. La serie ha tenido un gran impacto cultural y ha generado una gran
+          cantidad de seguidores en todo el mundo. Sin embargo, su final fue objeto de controversia y recibió críticas
+          mixtas por parte de los fanáticos y la crítica.
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-3 flexible"> <img src="../img/breakingBad.jpg" alt="imagenbreakingbad"> </div>
+      <div class="col-9">
+        <h2>Breaking Bad</h2>
+        <p>
+          "Breaking Bad" es una serie de televisión dramática estadounidense creada por Vince Gilligan. La trama sigue a
+          Walter White, un profesor de química de secundaria que se ve obligado a cocinar metanfetamina después de ser
+          diagnosticado con cáncer y enfrentar dificultades financieras. La serie muestra la transformación de Walter de
+          un hombre común en un criminal peligroso y la relación con su ex alumno, Jesse Pinkman.
+          <br>
+          <br>
+          La serie ha sido aclamada por su guión y actuaciones, especialmente por Bryan Cranston en el papel de Walter
+          White y Aaron Paul en el papel de Jesse Pinkman. La serie también ha sido elogiada por su cinematografía, la
+          exploración de temas profundos y la forma en que los personajes evolucionan a lo largo de la trama.
+          <br>
+          <br>
+          "Breaking Bad" ha sido considerada como una de las mejores series de televisión de todos los tiempos y ha
+          ganado numerosos premios, incluyendo 16 Premios Emmy. La serie ha tenido un gran impacto cultural y ha
+          influido en muchas otras series de televisión y películas desde su estreno en 2008 hasta su final en 2013.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <p>Todos lo derechos reservados por Copyrigth</p>
+      </div>
+    </div>
+  </footer>
 
 
 
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
