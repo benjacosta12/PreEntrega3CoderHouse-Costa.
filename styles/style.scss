@@ -1,6 +1,4 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Gentium+Book+Plus&family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
 $color1:black;
 $color2:yellow;
@@ -10,8 +8,9 @@ $widthimg:200px;
 $sizeh1: 100px;
 $sizeh2:25px;
 
-$fonttitle: font-family 'Gentium Book Plus',
+$fonttitle:'Gentium Book Plus',
 serif;
+$fontp:'Open Sans', sans-serif;
 
 * {
     padding: 0;
@@ -24,12 +23,17 @@ serif;
 
 }
 
+.navbar-brand{
+    font-family: $fonttitle ;
+}
+
 
 
 .nav-link {
     font-size: large;
     @extend .hover;
-    
+    font-family: $fontp;
+
 }
 
 h1 {
@@ -53,7 +57,7 @@ span {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: animacionbanner 3s forwards;
+    animation: animacionbanner 2s forwards;
 }
 
 @keyframes animacionbanner {
@@ -72,6 +76,12 @@ span {
     background-image: url(../img/Reseña.jpg);
 
 
+}
+
+.bannerdocumental {
+    @extend .banner;
+    background-image: url(../img/doumental.jpg)
+    
 }
 
 .bannerserie {
@@ -101,10 +111,12 @@ section {
     p {
         color: $color2;
         font-size: xx-large;
+        font-family: $fontp;
     }
 
     h2 {
         color: $color3;
+        font-family: $fonttitle;
     }
 }
 
@@ -117,6 +129,10 @@ footer {
     @extend .container;
     color: yellow;
     text-align: center;
+
+    p{
+        font-family: $fontp;
+    }
 }
 
 .flexible {
@@ -131,26 +147,32 @@ footer {
     background-image: url(../img/reseñaserie.jpg);
 }
 
-.btn{
+.btn {
     color: white;
     font-size: &$sizeh2;
-    
+
 
 }
 
-.hover:hover{
+.hover:hover {
     background-color: yellow;
     color: black;
 
 }
 
-form{
+form {
     display: grid;
-    input::placeholder{
+    font-family: $fontp;
+
+    input::placeholder {
         font-weight: bold;
-    opacity: 0, 5;
-    color: black;
+        opacity: 0, 5;
+        color: black;
+
+
+    }
     
-        
+    legend{
+        font-family: $fonttitle;
     }
 }
