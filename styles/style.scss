@@ -3,6 +3,7 @@
 $color1:black;
 $color2:yellow;
 $color3:white;
+$color4:gold;
 
 $widthimg:200px;
 $sizeh1: 100px;
@@ -10,7 +11,8 @@ $sizeh2:25px;
 
 $fonttitle:'Gentium Book Plus',
 serif;
-$fontp:'Open Sans', sans-serif;
+$fontp:'Open Sans',
+sans-serif;
 
 * {
     padding: 0;
@@ -23,8 +25,8 @@ $fontp:'Open Sans', sans-serif;
 
 }
 
-.navbar-brand{
-    font-family: $fonttitle ;
+.navbar-brand {
+    font-family: $fonttitle;
 }
 
 
@@ -74,6 +76,7 @@ span {
 .banresenas {
     @extend .banner;
     background-image: url(../img/Reseña.jpg);
+    display: flex;
 
 
 }
@@ -81,7 +84,6 @@ span {
 .bannerdocumental {
     @extend .banner;
     background-image: url(../img/doumental.jpg)
-    
 }
 
 .bannerserie {
@@ -127,14 +129,22 @@ section {
 
 footer {
     @extend .container;
-    color: yellow;
+    color:$color2;
     text-align: center;
 
-    p{
+    p {
         font-family: $fontp;
+        
+    }
+
+    span{
+        color: $color3;
     }
 }
 
+.margin{
+    margin-top: 10px;
+}
 .flexible {
     display: flex;
     align-items: center
@@ -148,16 +158,22 @@ footer {
 }
 
 .btn {
-    color: white;
+    color:$color3;
     font-size: &$sizeh2;
 
 
 }
 
 .hover:hover {
-    background-color: yellow;
+    background-color:$color2;
     color: black;
 
+}
+
+.fondocont{
+    background-image: url(../img/imgpochccont.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 form {
@@ -171,8 +187,70 @@ form {
 
 
     }
-    
-    legend{
+
+    legend {
         font-family: $fonttitle;
     }
 }
+footer{
+    display: flex;
+    justify-content:center;
+    
+    i{
+        font-size: 50px;
+        color:$color2;
+        cursor: pointer;
+        
+    }
+}
+
+i:hover{
+    transform: scale(1.1);
+    color: #333;
+}
+
+.breadcrumb{
+    background-color: $color3;
+    margin-top: 30px;
+    
+    p{
+        color:$color1;
+        font-family: $fontp;
+        font-size: 20px;
+    }
+    
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+    }
+    i{
+        font-size: 22px;
+    }
+    
+}
+
+.fa-house{
+    color: $color2;
+}
+
+.fa-star{
+    color:$color4;
+}
+
+.stars{
+    margin-top: 3px;
+}
+
+div{
+    h1{
+        text-align: center;
+        font-family: $fonttitle;
+        color: $color2;
+        text-shadow: 2px 2px black;
+    }
+}
+
+

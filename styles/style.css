@@ -52,6 +52,7 @@ span {
 }
 .banresenas {
   background-image: url(../img/Reseña.jpg);
+  display: flex;
 }
 
 .bannerdocumental {
@@ -95,6 +96,13 @@ footer {
 footer p {
   font-family: "Open Sans", sans-serif;
 }
+footer span {
+  color: white;
+}
+
+.margin {
+  margin-top: 10px;
+}
 
 .flexible {
   display: flex;
@@ -115,6 +123,12 @@ footer p {
   color: black;
 }
 
+.fondocont {
+  background-image: url(../img/imgpochccont.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 form {
   display: grid;
   font-family: "Open Sans", sans-serif;
@@ -131,4 +145,58 @@ form input::placeholder {
 }
 form legend {
   font-family: "Gentium Book Plus", serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer i {
+  font-size: 50px;
+  color: yellow;
+  cursor: pointer;
+}
+
+i:hover {
+  transform: scale(1.1);
+  color: #333;
+}
+
+.breadcrumb {
+  background-color: white;
+  margin-top: 30px;
+}
+.breadcrumb p {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.breadcrumb ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb i {
+  font-size: 22px;
+}
+
+.fa-house {
+  color: yellow;
+}
+
+.fa-star {
+  color: gold;
+}
+
+.stars {
+  margin-top: 3px;
+}
+
+div h1 {
+  text-align: center;
+  font-family: "Gentium Book Plus", serif;
+  color: yellow;
+  text-shadow: 2px 2px black;
 }/*# sourceMappingURL=style.css.map */
