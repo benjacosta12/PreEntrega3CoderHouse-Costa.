@@ -84,6 +84,25 @@ section h1 {
   text-shadow: black;
 }
 
+main img {
+  width: 200px;
+}
+main p {
+  color: yellow;
+  font-size: xx-large;
+  font-family: "Open Sans", sans-serif;
+}
+main h2 {
+  color: white;
+  font-family: "Gentium Book Plus", serif;
+}
+main h1 {
+  font-family: "Gentium Book Plus", serif;
+  color: black;
+  font-size: 100px;
+  text-shadow: black;
+}
+
 .navbar-brand {
   font-size: 25px;
 }
@@ -231,5 +250,15 @@ div h1 {
   }
   div img {
     width: 200px;
+  }
+}
+@media (min-width: 320px) and (max-width: 379px) {
+  .tamaño {
+    font-size: 50px;
+  }
+}
+@media (min-width: 380px) and (max-width: 600px) {
+  .tamaño {
+    font-size: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
