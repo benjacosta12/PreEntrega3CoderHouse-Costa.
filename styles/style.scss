@@ -126,33 +126,6 @@ section {
     }
 }
 
-main{
-    img {
-        width: $widthimg;
-
-
-    }
-
-    p {
-        color: $color2;
-        font-size: xx-large;
-        font-family: $fontp;
-    }
-
-    h2 {
-        color: $color3;
-        font-family: $fonttitle;
-    }
-
-    h1 {
-        font-family: $fonttitle;
-        color: $color1;
-        font-size: $sizeh1;
-        text-shadow: black;
-
-
-    }
-}
 .navbar-brand {
     font-size: $sizeh2;
 
