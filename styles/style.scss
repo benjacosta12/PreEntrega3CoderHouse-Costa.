@@ -38,13 +38,6 @@ sans-serif;
 
 }
 
-h1 {
-    font-family: $fonttitle;
-    color: $color1;
-    font-size: $sizeh1;
-    text-shadow: black;
-}
-
 span {
     color: $color2;
 }
@@ -104,6 +97,8 @@ span {
 }
 
 section {
+
+    
     img {
         width: $widthimg;
 
@@ -120,6 +115,15 @@ section {
         color: $color3;
         font-family: $fonttitle;
     }
+
+    h1 {
+        font-family: $fonttitle;
+        color: $color1;
+        font-size: $sizeh1;
+        text-shadow: black;
+        
+        
+    }
 }
 
 .navbar-brand {
@@ -129,22 +133,33 @@ section {
 
 footer {
     @extend .container;
-    color:$color2;
+    color: $color2;
     text-align: center;
+    display: flex;
+    justify-content: center;
 
     p {
         font-family: $fontp;
-        
+
     }
 
-    span{
+    span {
         color: $color3;
     }
+
+    i {
+        font-size: 50px;
+        color: $color2;
+        cursor: pointer;
+        
+
+    }
 }
 
-.margin{
+.margin {
     margin-top: 10px;
 }
+
 .flexible {
     display: flex;
     align-items: center
@@ -158,19 +173,19 @@ footer {
 }
 
 .btn {
-    color:$color3;
+    color: $color3;
     font-size: &$sizeh2;
 
 
 }
 
 .hover:hover {
-    background-color:$color2;
+    background-color: $color2;
     color: black;
 
 }
 
-.fondocont{
+.fondocont {
     background-image: url(../img/imgpochccont.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -192,60 +207,50 @@ form {
         font-family: $fonttitle;
     }
 }
-footer{
-    display: flex;
-    justify-content:center;
-    
-    i{
-        font-size: 50px;
-        color:$color2;
-        cursor: pointer;
-        
-    }
-}
 
-i:hover{
+i:hover {
     transform: scale(1.1);
     color: #333;
 }
 
-.breadcrumb{
+.breadcrumb {
     background-color: $color3;
     margin-top: 30px;
-    
-    p{
-        color:$color1;
+
+    p {
+        color: $color1;
         font-family: $fontp;
         font-size: 20px;
     }
-    
-    ul{
+
+    ul {
         display: flex;
         list-style: none;
         gap: 8px;
         padding: 0;
         margin: 0;
     }
-    i{
+
+    i {
         font-size: 22px;
     }
-    
+
 }
 
-.fa-house{
+.fa-house {
     color: $color2;
 }
 
-.fa-star{
-    color:$color4;
+.fa-star {
+    color: $color4;
 }
 
-.stars{
+.stars {
     margin-top: 3px;
 }
 
-div{
-    h1{
+div {
+    h1 {
         text-align: center;
         font-family: $fonttitle;
         color: $color2;
@@ -253,4 +258,67 @@ div{
     }
 }
 
+
+
+@media (min-width: 320px) and (max-width:480px) {
+    section {
+        p {
+            font-size: 10px;
+            text-shadow: 2px 2px black;
+            
+        }
+    }
+    div{
+        img{
+            width: 90px;
+        }
+    }
+}
+
+
+@media (min-width: 480px) and (max-width:770px) {
+    section {
+        p {
+            font-size: 15px;
+            text-shadow: 2px 2px black;
+            
+        }
+    }
+    div{
+        img{
+            width: 100px;
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width:1020px) {
+    section {
+        p {
+            font-size: 20px;
+            text-shadow: 2px 2px black;
+            
+        }
+    }
+    div{
+        img{
+            width: 150px;
+        }
+    }
+}
+
+
+@media (min-width: 1020px) and (max-width:1200px) {
+    section {
+        p {
+            font-size: 30px;
+            text-shadow: 2px 2px black;
+            
+        }
+    }
+    div{
+        img{
+            width: 200px;
+        }
+    }
+}
 
